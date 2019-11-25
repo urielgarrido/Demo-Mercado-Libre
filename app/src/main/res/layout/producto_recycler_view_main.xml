@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_producto_celda_recycler_mainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_launcher_background" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_producto_celda_recycler_mainActivity"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_precio_producto_celda_recycler_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Presio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textView_titulo_producto_celda_recycler_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title del producto"
+                android:textColor="@color/negro" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/textView_condicion_producto_celda_recycler_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Condicion"
+                android:textColor="@color/negro"
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
